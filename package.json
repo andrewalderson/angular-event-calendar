@@ -1,0 +1,23 @@
+{
+  "name": "@andrewalderson/angular-event-calendar",
+  "version": "0.0.0",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewalderson/angular-event-calendar.git"
+  },
+  "author": "Andrew Alderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewalderson/angular-event-calendar/issues"
+  },
+  "homepage": "https://github.com/andrewalderson/angular-event-calendar#readme",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
+  }
+}
