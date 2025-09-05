@@ -1,0 +1,20 @@
+{
+  "name": "material/event-calendar",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/material/event-calendar/src",
+  "prefix": "mat",
+  "projectType": "library",
+  "tags": [ "scope:ui" ],
+  "targets": {
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [ "{options.reportsDirectory}" ],
+      "options": {
+        "reportsDirectory": "../../../coverage/packages/material/event-calendar"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

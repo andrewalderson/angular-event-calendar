@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [ "es2020", "dom" ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@andrewalderson/cdk/event-calendar": [
+        "packages/cdk/event-calendar/src/index.ts"
+      ],
+      "@andrewalderson/material/event-calendar": [
+        "packages/material/event-calendar/src/index.ts"
+      ]
+    }
+  },
+  "exclude": [ "node_modules", "tmp" ]
+}
