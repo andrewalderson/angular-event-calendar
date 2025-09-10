@@ -3,7 +3,7 @@ import { MatEventCalendar } from './event-calendar';
 
 const meta: Meta<MatEventCalendar> = {
   component: MatEventCalendar,
-  title: 'MatEventCalendar',
+  title: 'Material/EventCalendar',
 };
 export default meta;
 
