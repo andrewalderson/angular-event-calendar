@@ -1,9 +1,14 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
+    "@storybook/angular:start-storybook": {
+      "options": {
+        "host": "0.0.0.0"
+      }
+    },
     "@nx/vite:test": {
       "cache": true,
-      "inputs": ["default", "^default"]
+      "inputs": [ "default", "^default" ]
     },
     "@nx/eslint:lint": {
       "cache": true,
@@ -12,6 +17,15 @@
         "{workspaceRoot}/.eslintrc.json",
         "{workspaceRoot}/.eslintignore",
         "{workspaceRoot}/eslint.config.mjs"
+      ]
+    },
+    "build-storybook": {
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        "{projectRoot}/.storybook/**/*",
+        "{projectRoot}/tsconfig.storybook.json"
       ]
     }
   },
